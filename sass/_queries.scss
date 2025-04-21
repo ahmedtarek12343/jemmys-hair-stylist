@@ -1,0 +1,75 @@
+/* MEDIA QUERY MANAGER */
+/*
+0 - 600px:        phone
+600 - 900px:      tablet portrait
+900 - 1200px:     tablet landscape
+[1200 - 1800px]: normal desktop
+*/
+
+/* tab landscape */
+@media only screen and (width<=75em) {
+  html {
+    font-size: 57%;
+  }
+
+  .grid--3--cols {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* tab portrait */
+@media only screen and (width<=57.5em) {
+  .hero .hero__title {
+    font-size: 6rem;
+  }
+
+  .hero .hero__tagline {
+    font-size: 2rem;
+  }
+
+  .hero .hero__description {
+    font-size: 2rem;
+  }
+
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    background-position: 30% !important;
+  }
+
+  .grid--3--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-area-container .grid-container {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "d"
+      "b"
+      "b"
+      "b"
+      "b"
+      "c"
+      "c"
+      "c"
+      "c"
+      "e"
+      "f";
+    grid-template-rows: 50rem 50rem 40rem 40rem 40rem 40rem 10rem 10rem 10rem 10rem 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .covered .container .grid {
+    grid-template-rows: 1fr;
+  }
+
+  .footer .container .footer__flex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+  }
+}

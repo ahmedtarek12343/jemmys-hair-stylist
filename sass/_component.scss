@@ -1,0 +1,357 @@
+///////// HERO /////////
+
+.hero {
+  background-image: url(../img/pexelsphoto458530.png);
+  background-size: cover;
+  background-position: 80%;
+  height: 90vh;
+  color: var(--white);
+  padding: 10rem 0;
+
+  & .container {
+    height: 100%;
+  }
+
+  & .grid {
+    height: 100%;
+    align-items: end;
+  }
+
+  &__tagline {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 9rem;
+    color: var(--color-primary);
+  }
+
+  &__right {
+    justify-self: end;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+    text-align: end;
+    line-height: 1.5;
+    width: 90%;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}
+
+///////// ABOUT /////////
+
+.about {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10rem 0;
+
+  & .grid {
+    gap: 6rem;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    &-2 {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////
+/// BTN
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--black);
+  padding: 1.5rem 3rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+}
+
+///////// TUTORIAL /////////
+
+.tutorial {
+  padding: 10rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/pexelsphoto668196.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+
+  & .grid {
+    gap: 2rem;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &__img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center 10%;
+  }
+
+  &__title,
+  &__description-1 {
+    align-self: end;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    margin-left: 2rem;
+  }
+
+  &__description-1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 500;
+
+    &-span {
+      font-style: italic;
+    }
+  }
+
+  &__description-2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+  }
+
+  &__btn-description {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+  }
+
+  &__btn {
+    margin-left: 2rem;
+  }
+}
+
+///////// GRID AREA /////////
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a a b b b b c c c c"
+    "d d b b b b e e f f";
+  grid-template-rows: repeat(2, 35rem);
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-area-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.grid-area-1 {
+  grid-area: a;
+}
+
+.grid-area-2 {
+  grid-area: b;
+}
+
+.grid-area-3 {
+  grid-area: c;
+  padding: 3rem;
+  background-color: var(--black);
+}
+
+.grid-area-4 {
+  grid-area: d;
+}
+
+.grid-area-5 {
+  grid-area: e;
+  background-color: var(--color-primary);
+  color: var(--black);
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.grid-area-6 {
+  grid-area: f;
+}
+
+.grid-area-3-description-1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: 2.5rem;
+  margin-top: 5rem;
+}
+
+.grid-area-3-description-2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+///////// TESTIMONIALS /////////
+
+.testimonials {
+  padding: 20rem 0;
+  background-color: var(--black);
+  color: var(--white);
+  background-image: url(../img/pexelsphoto1399073.jpeg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    &-1 {
+      margin-bottom: 2.5rem;
+    }
+    &-2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.2;
+      &-span {
+        font-style: italic;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+
+  &__right &__description-1 {
+    margin-bottom: 6.5rem;
+  }
+}
+
+///////// COVERED /////////
+
+.covered {
+  padding: 10rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/pexelsphoto668196.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+
+  & .grid {
+    gap: 2rem;
+    grid-template-rows: 40rem 40rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  &__description__p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    align-self: end;
+    &-span {
+      font-style: italic;
+    }
+  }
+
+  &__description__header {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    padding-left: 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+    &__item {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__wrapper-2 {
+    padding-left: 2rem;
+  }
+
+  &__wrapper-2-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+
+  &__wrapper-2-description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+
+///////// FOOTER /////////
+
+.footer {
+  background-color: var(--black);
+  padding: 5rem;
+  &__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    &-container {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
